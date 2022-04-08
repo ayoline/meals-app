@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, avoid_print
 import 'package:flutter/material.dart';
 
 import './screens/meal_detail_screen.dart';
@@ -44,9 +44,10 @@ class MyApp extends StatelessWidget {
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
-        return MaterialPageRoute(
-          builder: (ctx) => CategoriesScreen(),
-        );
+        return null;
+        // return MaterialPageRoute(
+        //   builder: (ctx) => CategoriesScreen(),
+        // );
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
