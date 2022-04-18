@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use, avoid_print
 import 'package:flutter/material.dart';
 
+import './screens/filters_screen.dart';
 import './screens/tabs_screen.dart';
 import './screens/meal_detail_screen.dart';
 import './screens/category_meals_screen.dart';
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => const TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen(),
         MealDetailsScreen.routeName: (ctx) => const MealDetailsScreen(),
+        FiltersScreen.routeName: (ctx) => const FiltersScreen(),
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
